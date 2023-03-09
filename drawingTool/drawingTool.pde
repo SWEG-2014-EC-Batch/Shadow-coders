@@ -2,7 +2,7 @@ void setup()
       {
           size(500,500);
           background(#ffffff);
-           frameRate(1000000);
+           frameRate(1000000);//test
        }
        
        
