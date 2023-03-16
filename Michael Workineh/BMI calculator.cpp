@@ -27,7 +27,7 @@ float bmi,height,weight;
 
     if(gender == 'F'||gender == 'f') //adderess both uppercase or lowercase inputs
         {
-            system("color f");
+            //system("color f");
             cout<<"Please enter your weight in kilograms";
             cin>>weight;
             cout<<"Now enter your height in meters ";
@@ -79,7 +79,7 @@ float bmi,height,weight;
 
     else //adderess other wrong inputs
         {
-            system("color 4");
+            //system("color 4");
             cout<<"\a Invalid input. Please try agian\n";
 
 
@@ -95,7 +95,7 @@ float bmi,height,weight;
 
     if(gender == 'F'||gender == 'f') //adderess both uppercase or lowercase inputs
         {
-            system("color f");
+            //system("color f");
             cout<<"Please enter your weight in kilograms ";
             cin>>weight;
             cout<<"Now enter your height in meters ";
@@ -147,7 +147,7 @@ float bmi,height,weight;
 
     else //adderess other wrong inputs
         {
-            system("color 4");
+            //system("color 4");
             cout<<"\a Invalid input. Please try agian\n";
 
 
@@ -159,7 +159,7 @@ float bmi,height,weight;
 
     while(q ==1)
    {
-        system("color f");
+        //system("color f");
         cout<<"\n Please specify your gender. Type M for male, F for female. "; //first check the gender
     cin>>gender;
 
@@ -190,9 +190,9 @@ float bmi,height,weight;
 
     else if(gender == 'M'||gender == 'm') //address both uppercase or lowercase inputs
         {
-            cout<<"Please enter your weight ";
+            cout<<"Please enter your weight in kilograms";
             cin>>weight;
-            cout<<"Now enter your height ";
+            cout<<"Now enter your height in meters";
             cin>>height;
 
             bmi = weight/pow(height,2);
@@ -215,7 +215,7 @@ float bmi,height,weight;
         }
 
     else{
-            system("color 4");
+            //system("color 4");
             cout<<"\a Invalid input. Please try again\n";
 
 

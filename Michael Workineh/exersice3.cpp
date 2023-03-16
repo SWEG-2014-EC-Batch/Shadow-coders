@@ -12,7 +12,7 @@ int main()
 		cout<<"wrong input try agian"<<" You have "<<3-at<<" attempts left";
 		cin>>test;
 		at++;
-		    if(3-at==0){
+		    if(3-at==0){ //or simply use 'if(at==0)'
 			    return 0;
 		    }
 	}
