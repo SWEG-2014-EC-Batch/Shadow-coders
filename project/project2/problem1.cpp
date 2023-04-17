@@ -179,5 +179,160 @@ int main(){
         }
     }
 }
-return 0;
+o:cout<<"if you want to search for a specific month's information press \"s\"\nto change the data representation press \"t\"\npress \"c\" to change the data entered \npress \"q\" to leave the program\npress \"a\" to change the the data you want to see\nand do press any thing if you want to continue viewing"<<endl;
+    d:cin>>menu2;
+
+    switch(menu2){
+        case 'a':
+        case 'A':
+            system("cls");
+            goto a;
+            break;
+        case 't':
+        case 'T':
+            system("cls");
+            goto t;
+            break;
+        case 'c':
+        case 'C':
+            system("cls");
+            goto l;
+            break;
+        case 'q':
+        case 'Q':
+            return 0;
+            break;
+        case 's':
+        case 'S':
+            cout<<"which specific month are you searching for? type it month number. "<<endl;
+            cin>>searchMonth;
+            cout<<endl<<endl;
+            for(int i=0;i<13;i++){
+                if(month[0][i]==searchMonth){
+                    searchNum=i;
+                    i=14;
+                }
+            }
+            if(dataType=='A'dataType=='a'){
+               cout<<input[searchNum];
+                if(month[0][searchNum]==5||month[0][searchNum]==10){
+                    cout<<"    ";
+                }
+                else if(month[0][searchNum]==3||month[0][searchNum]==11){
+                    cout<<"   ";
+                }
+                else if(month[0][searchNum]==6||month[0][searchNum]==7){
+                    cout<<" ";
+                }
+                else if(month[0][searchNum]==2||month[0][searchNum]==4||month[0][searchNum]==9||month[0][searchNum]==12||month[0][searchNum]==13){
+                    cout<<"  ";
+                }
+                else{
+                    cout<<"";
+                }
+
+                if(in[searchNum]-500>=0){
+                cout<<"|||";
+                for(int i=0;i<in[searchNum]-500;i+=100){
+                    cout<<"|||||||";
+                    }
+                if(deci[searchNum]>0&&deci[searchNum]<50){
+                    cout<<"";
+                    }
+                else if (deci[searchNum]==50){
+                    cout<<"|";
+                    }
+                else if(deci[searchNum]>5&&deci[searchNum]<99){
+                    cout<<"|||||";
+                    }
+                }
+                    cout<<endl<<endl;
+
+        cout<<"        0";
+        for(int i=500;i<=2000;i+=100){
+            if(i<1000){
+                cout<<"    ";
+            }
+            else{
+                cout<<"   ";
+            }
+            cout<<i;
+            }
+            cout<<endl;
+        }
+if(dataType=='R'dataType=='r'){
+                cout<<input[searchNum];
+                if(month[0][searchNum]==5||month[0][searchNum]==10){
+                    cout<<"    ";
+                }
+                else if(month[0][searchNum]==3||month[0][searchNum]==11){
+                    cout<<"   ";
+                }
+                else if(month[0][searchNum]==6||month[0][searchNum]==7){
+                    cout<<" ";
+                }
+                else if(month[0][searchNum]==2||month[0][searchNum]==4||month[0][searchNum]==9||month[0][searchNum]==12||month[0][searchNum]==13){
+                    cout<<"  ";
+                }
+                else{
+                    cout<<"";
+                }
+
+                if(in[searchNum]-10>=0){
+                    cout<<"||";
+                for(int i=0;i<in[searchNum]-10;i+=10){
+                    cout<<"||";
+                    }
+                if(deci[searchNum]>0&&deci[searchNum]<5){
+                    cout<<"";
+                    }
+                else if (deci[searchNum]==5){
+                    cout<<"|||";
+                    }
+                else if(deci[searchNum]>5&&deci[searchNum]<=9){
+                    cout<<"||||";
+                    }
+                }
+                    cout<<endl<<endl;
+                    cout<<"        0";
+                for(int i=10;i<=100;i+=10){
+                    if(i<10){
+                        cout<<"    ";
+                    }
+                    else{
+                        cout<<"    ";
+                    }
+                    cout<<i;
+                    }
+                    cout<<endl;
+                }
+            cout<<endl<<endl;
+            cout<<"----------------------------------"<<endl;
+            cout<<"|  month    |";
+            (dataType=='r'||dataType=='R')?cout<<"relative rainfall(%)|"<<endl:cout<<"actual rainfall(mm) |"<<endl;
+            cout<<"----------------------------------"<<endl;
+            cout<<input[searchNum];
+            if(month[0][searchNum]==5||month[0][searchNum]==10){
+                cout<<"    ";
+            }
+            else if(month[0][searchNum]==3||month[0][searchNum]==11){
+                cout<<"   ";
+            }
+            else if(month[0][searchNum]==6||month[0][searchNum]==7){
+                cout<<" ";
+            }
+            else if(month[0][searchNum]==2||month[0][searchNum]==4||month[0][searchNum]==9||month[0][searchNum]==12||month[0][searchNum]==13){
+                cout<<"  ";
+            }
+                cout<<"    |     ";
+            (dataType=='r'||dataType=='R')?cout<<month[2][searchNum]<<endl:cout<<month[1][searchNum]<<endl;
+            cout<<"----------------------------------"<<endl;
+            goto o;
+            break;
+        default:
+            cout<<"please press a, t or q to change the data you are in in their according manner.\n";
+            goto d;
+
+    }
+    return 0;
 }
