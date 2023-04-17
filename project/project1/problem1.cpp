@@ -23,5 +23,13 @@ int main()
         sum2+=s[i]*pow(10,i);
         }
     }
+if(m!=0){
+    system("cls");
+    cout<<"the least upper bound temperature you can cook with is "<<sum1<<"*c"<<endl<<"the highest lower bound temperature you can cook with is "<<sum2<<"*c"<<endl;
+    }
+else{
+    system("cls");
+    cout<<"you can cook with "<<sum1<<"*c"<<endl;
+    }
 return 0;
 }
