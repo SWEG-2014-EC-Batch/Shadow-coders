@@ -13,7 +13,7 @@ for(int i = 0; i < (2*num +1); i++){
                 cout<<num1<<" ";
             }
     else 
-        cout<<" ";
+        cout<<"  ";
 }
         cout<<endl;
     }
