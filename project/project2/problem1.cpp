@@ -1,6 +1,94 @@
 #include<iostream>
 using namespace std;
 int main(){
+
+input monthly average rainfall
+      current month
+      rain fall figures of the provious 12 month
+output rainfall for previous 12 month
+       how much above and bellow average rainfall for each month
+       2 bar graph (average rain fall and actual rain fall)
+
+
+char dataType,dataRepresentation,menu2,searchRepresentation;
+string wer,input[13];
+float avRain, in1[13],month[3][13],searchMonthInfo[13];
+int curMonth,searchMonth,searchNum=0,in[13],deci[13];;
+l:cout<<"enter average rain fall\n";
+cin>>avRain;
+cout<<"enter current month number, i.e. 1 for meskerem, 2 for tekemet and so on\n";
+cin>>curMonth;
+for(int i =0,j=curMonth;i<13;i++,j--){
+    if(j==0){
+        j=13;
+    }
+    switch(j){
+        case 1:
+        wer="meskerem";
+        break;
+        case 2:
+        wer="tekemt";
+        break;
+        case 3:
+        wer="hedar";
+        break;
+        case 4:
+        wer="tasase";
+        break;
+        case 5:
+        wer="terr";
+        break;
+        case 6:
+        wer="yekatit";
+        break;
+        case 7:
+        wer="megabit";
+        break;
+        case 8:
+        wer="miyaziya";
+        break;
+        case 9:
+        wer="genbot";
+        break;
+        case 10:
+        wer="sene";
+        break;
+        case 11:
+        wer="hamle";
+        break;
+        case 12:
+        wer="nehase";
+        break;
+        case 13:
+        wer="pagume";
+        break;
+    }
+  
+    month[0][i]=j;
+    cout<<"actual rainfall for month "<<wer<<" ("<<j<<")"<<endl;
+    cin>>month[1][i];
+    input[i]=wer;
+    month[2][i]=((month[1][i]-avRain)/avRain)*100;
+
+}
+a:cout<<"type \"A\" to get the actual rain fall data\ntype \"R\" to get the relative rainfall data\n";
+cin>>dataType;
+t:cout<<"to get a graphical representaion type G\nto get a tabular representation type T\n";
+cin>>dataRepresentation;
+searchRepresentation=dataRepresentation;
+if(dataType=='A'||dataType=='a'){
+    for(int i=0;i<13;i++){
+        searchMonthInfo[i]=month[1][i];
+           for(int i=0;i<13;i++){
+            in1[i]=month[1][i];
+            }
+        for(int i=0;i<13;i++){
+            in[i]=((int)(in1[i]/100))*100;
+            }
+        int deci[13];
+        for(int i=0;i<13;i++){
+            deci[i]=(in1[i]-in[i]);
+        }
   if(dataRepresentation=='G'dataRepresentation=='g'){
         for(int i=0;i<13;i++){
             cout<<input[i]<<" ";
