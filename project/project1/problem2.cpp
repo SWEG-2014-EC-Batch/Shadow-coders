@@ -10,7 +10,8 @@ for(int i = 0; i < (2*num +1); i++){
    int num2 = num-abs(num - i);
  }
     
-    else cout<<" ";
+    else 
+        cout<<" ";
 }
         cout<<endl;
     }
