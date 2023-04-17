@@ -91,6 +91,7 @@ if(dataType=='A'||dataType=='a'){
         for(int i=0;i<13;i++){
             deci[i]=(in1[i]-in[i]);
         }
+    }
   if(dataRepresentation=='G'||dataRepresentation=='g'){
         for(int i=0;i<13;i++){
             cout<<input[i]<<" ";
@@ -306,7 +307,7 @@ o:cout<<"if you want to search for a specific month's information press \"s\"\nt
                     i=14;
                 }
             }
-            if(dataType=='A'dataType=='a'){
+            if(dataType=='A'||dataType=='a'){
                cout<<input[searchNum];
                 if(month[0][searchNum]==5||month[0][searchNum]==10){
                     cout<<"    ";
@@ -353,7 +354,7 @@ o:cout<<"if you want to search for a specific month's information press \"s\"\nt
             }
             cout<<endl;
         }
-if(dataType=='R'dataType=='r'){
+if(dataType=='R'||dataType=='r'){
                 cout<<input[searchNum];
                 if(month[0][searchNum]==5||month[0][searchNum]==10){
                     cout<<"    ";
