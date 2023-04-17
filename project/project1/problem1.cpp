@@ -23,6 +23,14 @@ int main()
     int s[w];
     for(int i=0;y>0;y/=10,i++){
         s[i]=y%10;}
+    for(int i=0;i<w;i++){
+    if(s[i]==1||s[i]==4||s[i]==7){
+        m=1;
+        if(i==0){
+        //cout<<"hi"<<endl;
+        sum1+=(s[i]+1)*pow(10,i);
+        sum2+=(s[i]-1)*pow(10,i);
+        }
 
   else
             {   //cout<<"yee"<<endl;
