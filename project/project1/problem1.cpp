@@ -12,13 +12,7 @@ int main()
     y=x;
     
     for(;x>0;x/=10){
-        //s[i]=x%10;
-        //cout<<y<<endl;
         ++w;
-        //sum1+=y*pow(10,w);
-        //sum2+=y*pow(10,w);
-        //cout<<endl;
-        //cout<<sum<<endl;
     }
     int s[w];
     for(int i=0;y>0;y/=10,i++){
