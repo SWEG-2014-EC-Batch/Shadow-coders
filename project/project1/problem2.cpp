@@ -9,7 +9,9 @@ for(int i = 0; i < (2*num +1); i++){
    int num1 = num-abs(num - j);
    int num2 = num-abs(num - i);
  }
-    
+     if (num1 + num2 <= num){
+                cout<<num1<<" ";
+            }
     else 
         cout<<" ";
 }
