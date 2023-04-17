@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-
+/*
 input monthly average rainfall
       current month
       rain fall figures of the provious 12 month
@@ -9,7 +9,7 @@ output rainfall for previous 12 month
        how much above and bellow average rainfall for each month
        2 bar graph (average rain fall and actual rain fall)
 
-
+*/
 char dataType,dataRepresentation,menu2,searchRepresentation;
 string wer,input[13];
 float avRain, in1[13],month[3][13],searchMonthInfo[13];
