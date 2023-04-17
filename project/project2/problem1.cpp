@@ -1,7 +1,17 @@
+//this is a program get the average rainful for the user and print it in tabular and bar graph format
 #include<iostream>
 using namespace std;
 int main(){
 
+ /*
+input monthly average rainfall
+      current month
+      rain fall figures of the provious 12 month
+output rainfall for previous 12 month
+       how much above and bellow average rainfall for each month
+       2 bar graph (average rain fall and actual rain fall)
+*/
+      
 input monthly average rainfall
       current month
       rain fall figures of the provious 12 month
