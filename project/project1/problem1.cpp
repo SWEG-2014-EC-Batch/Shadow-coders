@@ -10,16 +10,18 @@ int main()
     cout<<"Enter the temp you want to cook with \n";
     cin>>x;
     y=x;
+    cout<<"\n Your input tempreature is out of bound";
     
     for(;x>0;x/=10){
         ++w;
+        
     }
     int s[w];
-    for(int i=0;y>0;y/=10,i++){
+    for(int i=0;y>0;y/=10,i++){//used to store our input tempreature in our array
         s[i]=y%10;}
-    for(int i=0;i<w;i++){
+    for(int i=0;i<arraySize;i++){
     if(s[i]==1||s[i]==4||s[i]==7){
-        m=1;
+        condition=1;
         if(i==0){
         //cout<<"hi"<<endl;
         sum1+=(s[i]+1)*pow(10,i);
