@@ -5,18 +5,18 @@ using namespace std;
 
 int main(){
     
-    int x,storeTemp,w=0,m=0;
+    int inputTemperature,storeTemp,w=0,m=0;
     float sum1=0,sum2=0;
     cout<<"Enter the temp you want to cook with \n";
-    cin>>x;
+    cin>>inputTemperature;
     if(inputTemperature>999||inputTemperature<0){
            cout<<"\n Your input tempreature is out of bound";
-    storeTemp=x;
-    for(;x>0;x/=10){//this for loop calculates the number of digits our input has, which will be used to initialize the size of our array
+    storeTemp=inputTemperature;
+    for(;inputTemperature>0;inputTemperature/=10){//this for loop calculates the number of digits our input has, which will be used to initialize the size of our array
         ++w;  
     }
     
-    int s[w];
+    int s[w]; // initialize our array 
     
     for(int i=0;storeTemp>0;storeTemp/=10,i++){//used to store our input tempreature in our array
         s[i]=y%10;
