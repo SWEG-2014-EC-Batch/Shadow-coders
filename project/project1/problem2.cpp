@@ -12,7 +12,7 @@ for(int i = 0; i < (2*num +1); i++){
      if (num1 + num2 <= num){
                 cout<<num1<<" ";
             }
-    else {
+    else {//to create the daimond hallow with in the square of numbers
         cout<<"  ";
     }
  }
