@@ -15,7 +15,9 @@ for(int i = 0; i < (2*num +1); i++)//calculates the number of rows
                 cout<<num1<<" ";
             }
     else {//to create the daimond hallow with in the square of numbers
-        cout<<"  ";
+        if((num1)<10){
+                cout<<"  ";
+                }
     }
  }
         cout<<endl;
