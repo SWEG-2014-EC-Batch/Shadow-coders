@@ -5,21 +5,23 @@ using namespace std;
 
 int main(){
     
-    int inputTemperature,storeTemp,w=0,m=0;
+    int inputTemperature,storeTemp,arraySize=0,condition=0;
     float sum1=0,sum2=0;
     cout<<"Enter the temp you want to cook with \n";
     cin>>inputTemperature;
     if(inputTemperature>999||inputTemperature<0){
            cout<<"\n Your input tempreature is out of bound";
+            return 0;
+    }
     storeTemp=inputTemperature;
     for(;inputTemperature>0;inputTemperature/=10){//this for loop calculates the number of digits our input has, which will be used to initialize the size of our array
-        ++w;  
+        ++arraySize;  
     }
     
-    int s[w]; // initialize our array 
+    int s[arraySize]; // initialize our array 
     
     for(int i=0;storeTemp>0;storeTemp/=10,i++){//used to store our input tempreature in our array
-        s[i]=y%10;
+        s[i]=storeTemp%10;
     }
     
     for(int i=0;i<arraySize;i++){
@@ -42,7 +44,7 @@ int main(){
         }
     }
     
-if(m!=0){//if our input temperature has the digits 1, 4, or 7
+if(condition!=0){//if our input temperature has the digits 1, 4, or 7
     system("cls");
     cout<<"the least upper bound temperature you can cook with is "<<sum1<<"*c"<<endl<<"the highest lower bound temperature you can cook with is "<<sum2<<"*c"<<endl;
     }
