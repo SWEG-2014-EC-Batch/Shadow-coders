@@ -14,7 +14,7 @@ int main(){
             return 0;
     }
     storeTemp=inputTemperature;
-    for(;inputTemperature>0;inputTemperature/=10){//this for loop calculates the number of digits our input has, which will be used to initialize the size of our array
+    for(;inputTemperature>0;inputTemperature/=10){//this for loop calculates the number of digits our input has, which will be used to declare the size of our array
         ++arraySize;  
     }
     
