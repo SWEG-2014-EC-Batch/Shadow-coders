@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
     
-    int inputTemperature,storeTemp,arraySize=0,condition=0;
+    long int inputTemperature,storeTemp,arraySize=0,condition=0;
     float sum1=0,sum2=0;
     cout<<"Enter the temp you want to cook with \n";
     cin>>inputTemperature;
