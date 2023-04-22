@@ -4,6 +4,7 @@ using namespace std;
 int main() {
     int num;
     cout<<"Enter a number: ";
+    cout<<endl;
     
     for(int i = 0; i < (2*num +1); i++){//calculates the number of rows
      for(int j = 0; j < (num*2 + 1); j++){//calculates the number of columns
