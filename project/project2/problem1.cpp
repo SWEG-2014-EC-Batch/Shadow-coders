@@ -85,7 +85,7 @@ if(dataType=='A'||dataType=='a'){
             in1[i]=month[1][i];
             }
         for(int i=0;i<13;i++){
-            in[i]=((int)(in1[i]/100))*100;
+            in[i]=((int)(in1[i]/10))*10;
             }
         int deci[13];
         for(int i=0;i<13;i++){
@@ -119,18 +119,18 @@ if(dataType=='A'||dataType=='a'){
                 cout<<"";
             }
 
-            if(in[j]-500>=0){
+            if(in[j]-50>=0){
                 cout<<"|||||||";
-                for(int i=0;i<in[j]-500;i+=100){
+                for(int i=0;i<in[j]-50;i+=10){
                     cout<<"|||||||";
                     }
-                if(deci[j]>0&&deci[j]<50){
+                if(deci[j]>0&&deci[j]<5){
                     cout<<"||";
                     }
-                else if (deci[j]==50){
+                else if (deci[j]==5){
                     cout<<"|||";
                     }
-                else if(deci[j]>5&&deci[j]<99){
+                else if(deci[j]>5&&deci[j]<9){
                     cout<<"|||||";
                     }
                 }
@@ -138,12 +138,12 @@ if(dataType=='A'||dataType=='a'){
                 }
 
         cout<<"        0";
-        for(int i=500;i<=2000;i+=100){
-            if(i<1000){
-                cout<<"    ";
+        for(int i=50;i<=300;i+=10){
+            if(i<100){
+                cout<<"     ";
             }
             else{
-                cout<<"   ";
+                cout<<"    ";
             }
             cout<<i;
             }
@@ -325,30 +325,30 @@ o:cout<<"if you want to search for a specific month's information press \"s\"\nt
                     cout<<"";
                 }
 
-                if(in[searchNum]-500>=0){
+                if(in[searchNum]-50>=0){
                 cout<<"|||||";
-                for(int i=0;i<in[searchNum]-500;i+=100){
+                for(int i=0;i<in[searchNum]-50;i+=10){
                     cout<<"|||||||";
                     }
-                if(deci[searchNum]>0&&deci[searchNum]<50){
+                if(deci[searchNum]>0&&deci[searchNum]<5){
                     cout<<"||";
                     }
-                else if (deci[searchNum]==50){
+                else if (deci[searchNum]==5){
                     cout<<"|||";
                     }
-                else if(deci[searchNum]>5&&deci[searchNum]<99){
+                else if(deci[searchNum]>5&&deci[searchNum]<9){
                     cout<<"|||||";
                     }
                 }
                     cout<<endl<<endl;
 
         cout<<"        0";
-        for(int i=500;i<=2000;i+=100){
-            if(i<1000){
-                cout<<"    ";
+        for(int i=50;i<=300;i+=10){
+            if(i<100){
+                cout<<"     ";
             }
             else{
-                cout<<"   ";
+                cout<<"    ";
             }
             cout<<i;
             }
