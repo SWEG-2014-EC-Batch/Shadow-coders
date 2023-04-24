@@ -134,6 +134,17 @@ if(dataType=='A'||dataType=='a'){
                     cout<<"|||||";
                     }
                 }
+         else{
+                if(in[j]<25){
+                    cout<<"||";
+                }
+                else if(in[j]==25){
+                    cout<<"|||";
+                }
+                else{
+                    cout<<"||||";
+                }
+            }
                     cout<<endl<<endl;
                 }
 
@@ -340,6 +351,18 @@ o:cout<<"if you want to search for a specific month's information press \"s\"\nt
                     cout<<"|||||";
                     }
                 }
+             else{
+                if(in[searchNum]<25){
+                    cout<<"||";
+                }
+                else if(in[searchNum]==25){
+                    cout<<"|||";
+                }
+                else{
+                    cout<<"||||";
+                }
+            }
+             
                     cout<<endl<<endl;
 
         cout<<"        0";
