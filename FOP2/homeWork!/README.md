@@ -32,7 +32,7 @@ uses the pythagorian theorem to find the hypotenuse of a triangle
 ### hypotenuse function
 - returns the square root of side1 squared plus side2 squared
 ## Question 7 <a name="Question7"></a>
-### NEEDS REVISION!
+**NEEDS REVISION!**
 ## Question 8 <a name="Question8"></a>
 checks if an integer is a prime number or not
 ### main function
