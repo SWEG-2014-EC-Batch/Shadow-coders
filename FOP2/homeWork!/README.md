@@ -1,10 +1,10 @@
 # FOP2 assignment
 ## table of Contents
-- [Question 4](Question4)
-- [Question 5](Question5)
-- [Question 6](Question6)
-- [Question 7](Question7)
-- [Question 8](Question8)
+- [Question 4](#Question4)
+- [Question 5](#Question5)
+- [Question 6](#Question6)
+- [Question 7](#Question7)
+- [Question 8](#Question8)
 ## Question 4 <a name="Question4"></a>
 a simple number multipler.
 ### The main function
