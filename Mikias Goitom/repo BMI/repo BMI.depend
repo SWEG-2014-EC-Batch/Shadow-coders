@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1678910164 source:/home/kingm-sys/Documents/GitHub/Shadow-coders/Mikias Goitom/repo BMI/main.cpp
+	<iostream>
+	<math.h>
+
